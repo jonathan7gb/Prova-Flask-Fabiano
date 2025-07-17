@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --primary-color: rgb(1, 150, 75);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: 1px;
+}
+
+.botoesLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.botoesLinks a{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+    text-decoration: none;
+}
+
+.botoesLinks a:hover{
+    background-color: rgb(12, 112, 62);
+    transition: all 0.8s ease;
+}
+
+.container-index{
+    margin-top: 3rem;
+    color: var(--primary-color) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-index .textos{
+    width: 40vw;
+    text-align: center;
+}
+
+
+.container-index .textos ul li{
+    list-style: none;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 2rem ;
+    color: white;
+}
+
+.container-forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formsCadastro{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.button{
+    background-color: var(--primary-color);
+    padding: 1rem 0rem; 
+    color: white; 
+    border: none; 
+    font-size: 1.2rem; 
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(12, 112, 62);
+    transition: all 0.8s ease;
+}
+
+.btn{
+    background-color: var(--primary-color) !important;
+    padding: 1rem 0rem; 
+    color: white; 
+    border: none !important;; 
+    font-size: 1.2rem; 
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(12, 112, 62) !important;
+    transition: all 0.8s ease;
+}

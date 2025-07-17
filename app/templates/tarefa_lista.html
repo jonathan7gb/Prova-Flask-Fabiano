@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<div class="texto">
+    <h1>LISTA DE TAREFAS</h1>
+</div>
+
+{% include 'nav.html' %}
+
+    <div class="container">
+
+            <div class="row mt-4">
+                <h3>Lista de Tarefas</h3>
+                
+                <form action="" method="get" class="row">
+                    <div class="col-9">
+                        <input type="text" name="pesquisa" class="form-control" placeholder="Pesquisar Tarefa">
+                    </div>
+                    <div class="col-3">
+                        <button type="submit" class="btn btn-primary w-100">Pesquisar</button>
+                    </div>
+                </form>
+                <div class="col-12">
+                    <table class="table mt-3 table-striped">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Descrição</th>
+                                <th>Data Limite</th>
+                            </tr>
+                        </thead>
+                        <body>
+                            {% for linha in context.dados %}
+                                <tr>
+                                    <td>{{ linha.titulo }}</td>
+                                    <td>{{ linha.descricao }}</td>
+                                    <td>{{ linha.data_limite }}</td>
+                                </tr>
+                            {% endfor %}
+                        </body>
+                    </table>
+                </div>
+            </div>
+       </div>
+       
+
+{% endblock %}
